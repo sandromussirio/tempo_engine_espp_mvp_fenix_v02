@@ -1,0 +1,217 @@
+{
+  "objects": [
+    {
+      "name": "PISO_01",
+      "role": "BASE",
+      "type": "POLYLINE",
+      "category": "FLOOR",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "base_z": -0.15,
+      "extrude": 0.15,
+      "color": [
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "name": "PAREDE_FRENTE",
+      "role": "BASE",
+      "type": "POLYLINE",
+      "category": "WALL",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          0.2
+        ],
+        [
+          0,
+          0.2
+        ]
+      ],
+      "base_z": 0.0,
+      "extrude": 2.8,
+      "color": [
+        0,
+        46,
+        61
+      ]
+    },
+    {
+      "name": "PAREDE_FUNDO",
+      "role": "BASE",
+      "type": "POLYLINE",
+      "category": "WALL",
+      "points": [
+        [
+          0,
+          3.8
+        ],
+        [
+          6,
+          3.8
+        ],
+        [
+          6,
+          4.0
+        ],
+        [
+          0,
+          4.0
+        ]
+      ],
+      "base_z": 0.0,
+      "extrude": 2.8,
+      "color": [
+        0,
+        46,
+        61
+      ]
+    },
+    {
+      "name": "PAREDE_ESQUERDA",
+      "role": "BASE",
+      "type": "POLYLINE",
+      "category": "WALL",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.2,
+          0
+        ],
+        [
+          0.2,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "base_z": 0.0,
+      "extrude": 2.8,
+      "color": [
+        0,
+        46,
+        61
+      ]
+    },
+    {
+      "name": "PAREDE_DIREITA",
+      "role": "BASE",
+      "type": "POLYLINE",
+      "category": "WALL",
+      "points": [
+        [
+          5.8,
+          0
+        ],
+        [
+          6.0,
+          0
+        ],
+        [
+          6.0,
+          4
+        ],
+        [
+          5.8,
+          4
+        ]
+      ],
+      "base_z": 0.0,
+      "extrude": 2.8,
+      "color": [
+        0,
+        46,
+        61
+      ]
+    },
+    {
+      "name": "PORTA_CUT_01",
+      "role": "CUT",
+      "type": "POLYLINE",
+      "category": "OPENING",
+      "target": [
+        "PAREDE_FRENTE"
+      ],
+      "points": [
+        [
+          2.4,
+          -0.05
+        ],
+        [
+          3.3,
+          -0.05
+        ],
+        [
+          3.3,
+          0.25
+        ],
+        [
+          2.4,
+          0.25
+        ]
+      ],
+      "base_z": 0.0,
+      "extrude": 2.1
+    },
+    {
+      "name": "JANELA_CUT_01",
+      "role": "CUT",
+      "type": "POLYLINE",
+      "category": "OPENING",
+      "target": [
+        "PAREDE_DIREITA"
+      ],
+      "points": [
+        [
+          5.75,
+          1.4
+        ],
+        [
+          6.05,
+          1.4
+        ],
+        [
+          6.05,
+          2.6
+        ],
+        [
+          5.75,
+          2.6
+        ]
+      ],
+      "base_z": 0.9,
+      "extrude": 1.0
+    }
+  ]
+}
