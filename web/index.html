@@ -1,1 +1,40 @@
-function parseRulesText(inputRules)
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tempo Engine / ESPP MVP Fênix V02</title>
+  </head>
+
+  <body>
+    <h1>TEMPO ENGINE</h1>
+
+    <div class="field">
+      <label for="inputList">INPUT LIST</label>
+      <textarea id="inputList"></textarea>
+    </div>
+
+    <div class="field">
+      <label for="inputRules">INPUT REGRAS ADICIONAIS</label>
+      <textarea id="inputRules"></textarea>
+    </div>
+
+    <div class="field">
+      <button id="btnGenerate" type="button">GERAR PYTHON BLENDER</button>
+    </div>
+
+    <div class="field">
+      <label for="outputPython">OUTPUT PYTHON BLENDER</label>
+      <textarea id="outputPython" readonly></textarea>
+    </div>
+
+    <div class="field">
+      <button id="btnCopy" type="button">COPIAR PYTHON</button>
+    </div>
+
+    <div id="message" role="alert" aria-live="polite"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
